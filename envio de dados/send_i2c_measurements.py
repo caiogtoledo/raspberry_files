@@ -160,7 +160,7 @@ try:
                 executor.submit(
                     post_request, urls['consumer_2_cloud'], payload_consumer_2)
 
-        sleep(1)
+        sleep(0.5)
 
 except KeyboardInterrupt:
     print("\nCtrl-C pressionado. Programa encerrado...")
