@@ -100,7 +100,7 @@ try:
         # Placa solar
         payload_solar_panel = {
             "solar_panel_id": "12",
-            "instantly": ina_solar_panel.power(),
+            "instantly": ina_solar_panel.power()/1000,
             "timestamp": int(datetime.datetime.now().timestamp()) * 1000
         }
         print('-----------------------------')
@@ -110,7 +110,7 @@ try:
         # Consumidor 1
         payload_consumer_1 = {
             "consumer_id": "1",
-            "instantly": ina_consumer_1.power(),
+            "instantly": ina_consumer_1.power()/1000,
             "timestamp": int(datetime.datetime.now().timestamp()) * 1000
         }
         print('-----------------------------')
@@ -120,7 +120,7 @@ try:
         # Consumidor 2
         payload_consumer_2 = {
             "consumer_id": "2",
-            "instantly": ina_consumer_2.power(),
+            "instantly": ina_consumer_2.power()/1000,
             "timestamp": int(datetime.datetime.now().timestamp()) * 1000
         }
         print('-----------------------------')
